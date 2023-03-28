@@ -5,9 +5,9 @@ function NotFound() {
 
   useEffect(() => {
     let timer = setTimeout(() => {
-      navigate("/", {state:"Err Not page"});
+      navigate("/", { state: "Err Not page" });
     }, 1000);
-    return ()=> clearTimeout(timer);
+    return () => clearTimeout(timer);
   }, [navigate]);
 
   return (
