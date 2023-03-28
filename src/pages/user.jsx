@@ -1,15 +1,15 @@
 import React from "react";
 import { useOutletContext, useParams } from "react-router-dom";
 
-function Book() {
+function User() {
   const {id}= useParams();
   const outletContentObj = useOutletContext();
   return (
     <>
-    <h2>Book {id}</h2>
-    <div>{outletContentObj?.hello}  {console.log("outletContentObj",outletContentObj?.hello)}</div>
+    <h2>User  {id}</h2>
+    userLayout
     </>
   )
 }
 
-export default Book;
+export default User;
